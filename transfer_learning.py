@@ -334,7 +334,7 @@ def main():
         m_ref_rssi.fit(RSSI_train_3D, y_train_fold, epochs=EPOCHS, batch_size=BATCH_SIZE, verbose=0)
         p_ref_rssi = np.argmax(m_ref_rssi.predict(RSSI_val_3D, verbose=0), axis=1)
 
-        # B. Model Custom (LSTM Fauzan)
+        # B. Model Custom (LSTM)
         m_user_csi = build_lstm_model(input_shape=(WINDOW_SIZE, INPUT_DIM))
         m_user_csi.compile(optimizer="adam", loss="sparse_categorical_crossentropy", metrics=["accuracy"])
         m_user_csi.fit(CSI_train_3D, y_train_fold, epochs=EPOCHS, batch_size=BATCH_SIZE, verbose=0)
