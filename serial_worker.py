@@ -248,7 +248,7 @@ class SerialWorker(QtCore.QThread):
                     
                     # Kirim data ke Dump Queue langsung dari paket pertama tanpa penyaringan waktu
                     self._push(self._dump_queue, (
-                        self._pkt_count, epoch_s, sub30_filt, rssi, line.strip()
+                        self._pkt_count, epoch_s, sub30_filt, rssi,pred_label, line.strip()
                         ))
 
             except serial.SerialException as e:

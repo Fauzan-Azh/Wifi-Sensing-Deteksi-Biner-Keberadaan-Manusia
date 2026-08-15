@@ -1,0 +1,5 @@
+Model,Akurasi Rata-rata 5-Fold (%)
+Model Saya (LSTM Custom),91.5028901734104
+Model Akmal (LSTM Adapted),97.45664739884393
+Support Vector Machine (RSSI),82.22543352601157
+Random Forest (RSSI),82.89017341040463

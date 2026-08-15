@@ -28,11 +28,11 @@ TEST_DIR = os.path.join(BASE_DIR, "testing")
 
 CLASS_MAP = {"kosong": 0, "terisi": 1}
 
-INPUT_DIM = 64                 # 64 Subcarrier Amplitudo
-TRANSIENT_CUTOFF_SEC = 10.0    # Buang 10 detik pertama
+INPUT_DIM = 64                 
+TRANSIENT_CUTOFF_SEC = 10.0    
 
-WINDOW_SIZE = 30               # Menggunakan 30 timesteps temporal
-WINDOW_STEP = 15               # Stride sliding window
+WINDOW_SIZE = 30               
+WINDOW_STEP = 15
 
 MODEL_OUTPUT_DIR = "output_model"
 REPORT_OUTPUT_DIR = "output_report"
@@ -203,7 +203,7 @@ def evaluate_and_log(y_true, y_pred, mask, model_name, feature_name, condition_n
 
 def main():
     logger.info("=" * 70)
-    logger.info("MEMULAI PELATIHAN ADIL: 4 MODEL x 2 FITUR (LOS & NLOS SEPARATED)")
+    logger.info("MEMULAI PELATIHAN: 4 MODEL x 2 FITUR (LOS & NLOS SEPARATED)")
     logger.info("=" * 70)
 
     # A. Hitung Global Scaler Min-Max

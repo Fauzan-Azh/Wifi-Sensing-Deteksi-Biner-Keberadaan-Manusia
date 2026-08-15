@@ -1,3 +1,0 @@
-Rata-rata Delay : 0.0275 s
-Maksimum Delay  : 0.0569 s
-Total Paket     : 102
